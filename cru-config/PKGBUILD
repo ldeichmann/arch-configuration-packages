@@ -1,0 +1,24 @@
+_ver=2.0
+_pkgbase=cru-config
+pkgname="${_pkgbase}"
+pkgver=${_ver}
+pkgrel=1
+pkgdesc="Meta package for cru settings"
+arch=(any)
+url="https://www.broken-by-design.org"
+license=('MIT')
+source=(
+50-mouse-acceleration.conf
+40-ipv6.conf
+)
+sha256sums=('0447aa600c928cefef1b9abb5615ed0a600049ba43e5d5ce992b7ebbd149c4fa'
+            'ae9d25829784342dbc2db023dc867e12647acb08110b2c25d919c0a4b4e16b8d')
+depends=(
+  'nm-dispatcher-resolv.conf'
+)
+
+package(){
+  install -Dm644 50-mouse-acceleration.conf "$pkgdir"/etc/X11/xorg.conf.d/50-mouse-acceleration.conf
+  install -Dm644 40-ipv6.conf "$pkgdir"/etc/sysctl.d/40-ipv6.conf
+}
+install=$pkgname.install
