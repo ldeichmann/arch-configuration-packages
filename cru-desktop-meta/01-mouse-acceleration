@@ -1,0 +1,5 @@
+# dconf path
+[org/gnome/desktop/peripherals/mouse]
+
+# dconf key names and their corresponding values
+accel-profile='flat'
