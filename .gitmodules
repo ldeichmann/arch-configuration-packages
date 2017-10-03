@@ -1,3 +1,0 @@
-[submodule "nm-dispatcher-resolv.conf"]
-	path = nm-dispatcher-resolv.conf
-	url = https://github.com/polygamma/nm-dispatcher-resolv.conf.git
