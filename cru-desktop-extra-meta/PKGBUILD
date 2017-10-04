@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-extra-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=1
+pkgrel=2
 pkgdesc="Meta package for cru desktop extras"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -12,6 +12,7 @@ depends=(
 'cheese'
 'dconf-editor'
 'eog-plugins'
+'file-roller'
 'gksu'
 'gnome-bluetooth'
 'gnome-calendar'
