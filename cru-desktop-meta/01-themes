@@ -1,0 +1,15 @@
+[org/gnome/desktop/interface]
+
+#themes
+cursor-theme='Human'
+gtk-theme='Arc-Darker'
+icon-theme='Moka'
+
+#panel
+clock-show-date=true
+clock-show-seconds=true
+
+#fonts
+font-name='Roboto Condensed, 11'
+document-font-name='Roboto Condensed, 11'
+monospace-font-name='Roboto Mono, 11'

@@ -1,0 +1,5 @@
+[org.gnome.settings-daemon/plugins/xsettings]
+
+overrides={'Gtk/ShellShowsAppMenu': <0>}
+hinting='full'
+antialiasing='rgba'

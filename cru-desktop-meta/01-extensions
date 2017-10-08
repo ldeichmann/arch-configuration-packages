@@ -1,0 +1,3 @@
+[org/gnome/shell]
+
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'mediaplayer@patapon.info', 'caffeine@patapon.info']

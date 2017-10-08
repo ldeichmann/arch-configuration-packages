@@ -2,13 +2,14 @@ post_install() {
   echo "Enabling gdm"
   systemctl enable gdm.service
   echo "Enabling network manager"
-  systemctl enable networkmanager.service
+  systemctl enable NetworkManager.service
   echo "Updating dconf"
   dconf update
 }
 
 post_upgrade() {
-  /bin/true
+  echo "Updating dconf"
+  dconf update
 }
 
 post_remove() {

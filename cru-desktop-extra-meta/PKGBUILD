@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-extra-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=2
+pkgrel=3
 pkgdesc="Meta package for cru desktop extras"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -10,6 +10,7 @@ license=('MIT')
 depends=(
 'arc-gtk-theme'
 'cheese'
+'cups'
 'dconf-editor'
 'eog-plugins'
 'file-roller'
@@ -23,6 +24,8 @@ depends=(
 'gst-plugins-base'
 'gst-plugins-good'
 'gst-plugins-ugly'
+'hplip'
+'hplip-plugin'
 'keepassx2'
 'moka-icon-theme-git'
 'mpv'

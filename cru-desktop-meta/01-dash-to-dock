@@ -1,0 +1,13 @@
+[org/gnome/shell/extensions/dash-to-dock]
+
+click-action='minimize'
+custom-theme-running-dots=false
+custom-theme-shrink=false
+dash-max-icon-size=48
+dock-fixed=true
+extend-height=true
+forced-straight-corner=true
+middle-click-action='launch'
+scroll-action='cycle-windows'
+shift-click-action='cycle-windows'
+shift-middle-click-action='launch'
