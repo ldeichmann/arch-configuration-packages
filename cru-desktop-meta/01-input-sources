@@ -1,4 +1,4 @@
 [org/gnome/desktop/input-sources]
 
 sources=[('xkb', 'us'), ('xkb', 'de+qwerty')]
-input-sources=['grp:switch', 'grp:shift_toggle', 'grp_led:scroll']
+xkb-options=['grp:switch', 'grp:shift_toggle', 'grp_led:scroll']
