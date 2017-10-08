@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=6
+pkgrel=7
 pkgdesc="Meta package for cru desktop"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -77,6 +77,7 @@ depends=(
 'gnome-system-monitor'
 'gnome-terminal'
 'gnome-themes-standard'
+'gnome-tweak-tool'
 'gnome-user-docs'
 'gnome-user-share'
 'grilo-plugins'
