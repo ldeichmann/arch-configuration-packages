@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=7
+pkgrel=8
 pkgdesc="Meta package for cru desktop"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -32,7 +32,7 @@ sha256sums=('cdbc1c4738cef8dbc3a6ac2e4a0a5f470810d47014c1c08e11ea52d6b20f415f'
             '2e2cdd1f997863a0084634e14e08363c8a5c80e876b164af473fb9848c79eede'
             '0d43486a6d839f17144ad747471470053c6eb26c77922baeeb8a31ae6b570991'
             'e966208fbc77f1ed6544231f06c08d810c8ff2be92b623792f8e0b7a1634bc09'
-            'ceacfa79cf0563d88dc2e777ab419ec2ed5cd26a7f0c6c3d831354e4312bd57f'
+            'bd30c647364809d2977cbbc2cb4085ddf4c52e106eb1152f1b94cc3cc6d0fd58'
             'c380af16416ced2fb9339f4bbbada54e7f8d1f1c56155787956aa49180330e27'
             'b83f7e97e0018d875b57f573e3ff94af39a5ff23f1cbdeb5cb2eebbb5ff2e93a'
             '1dac1829128bb3d8ce7adbc36d88e7ff02bf50826f02292ae82f1079d212c617'
