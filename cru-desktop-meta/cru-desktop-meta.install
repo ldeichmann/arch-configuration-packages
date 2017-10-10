@@ -3,6 +3,8 @@ post_install() {
   systemctl enable gdm.service
   echo "Enabling network manager"
   systemctl enable NetworkManager.service
+  echo "Enabling avahi daemon"
+  systemctl enable avahi-daemon.service
   echo "Updating dconf"
   dconf update
 }

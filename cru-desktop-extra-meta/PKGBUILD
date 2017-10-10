@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-extra-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=3
+pkgrel=4
 pkgdesc="Meta package for cru desktop extras"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -34,6 +34,7 @@ depends=(
 'syncthing'
 'syncthing-inotify'
 'steam'
+'system-config-printer'
 'teamspeak3'
 'thunderbird'
 'ttf-hack'
