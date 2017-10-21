@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-extra-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=4
+pkgrel=6
 pkgdesc="Meta package for cru desktop extras"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -13,6 +13,8 @@ depends=(
 'cups'
 'dconf-editor'
 'eog-plugins'
+'evolution'
+'evolution-ews'
 'file-roller'
 'gksu'
 'gnome-bluetooth'
@@ -26,7 +28,7 @@ depends=(
 'gst-plugins-ugly'
 'hplip'
 'hplip-plugin'
-'keepassx2'
+'keepassxc'
 'moka-icon-theme-git'
 'mpv'
 'puddletag'
@@ -36,7 +38,6 @@ depends=(
 'steam'
 'system-config-printer'
 'teamspeak3'
-'thunderbird'
 'ttf-hack'
 'ttf-symbola'
 
