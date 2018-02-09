@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-extra-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=6
+pkgrel=8
 pkgdesc="Meta package for cru desktop extras"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -16,6 +16,7 @@ depends=(
 'evolution'
 'evolution-ews'
 'file-roller'
+'firefox'
 'gksu'
 'gnome-bluetooth'
 'gnome-calendar'
@@ -34,14 +35,11 @@ depends=(
 'puddletag'
 'seahorse'
 'syncthing'
-'syncthing-inotify'
 'steam'
 'system-config-printer'
 'teamspeak3'
 'ttf-hack'
 'ttf-symbola'
-
-'firefox-beta-bin'
 )
 
 package(){

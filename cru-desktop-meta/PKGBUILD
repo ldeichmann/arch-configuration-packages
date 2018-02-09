@@ -2,7 +2,7 @@ _ver=2.0
 _pkgbase=cru-desktop-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=9
+pkgrel=10
 pkgdesc="Meta package for cru desktop"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -107,6 +107,7 @@ depends=(
 'gnome-shell-extension-caffeine-git'
 'gnome-shell-extension-mediaplayer-git'
 'gnome-shell-extension-dash-to-dock'
+'gnome-shell-extension-topicons-plus'
 )
 
 package(){
