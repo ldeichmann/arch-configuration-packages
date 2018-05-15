@@ -1,4 +1,4 @@
-_ver=2.0
+_ver=2.1
 _pkgbase=cru-config
 pkgname="${_pkgbase}"
 pkgver=${_ver}
@@ -10,15 +10,18 @@ license=('MIT')
 source=(
 50-mouse-acceleration.conf
 40-ipv6.conf
+rc-manager.conf
 )
 sha256sums=('0447aa600c928cefef1b9abb5615ed0a600049ba43e5d5ce992b7ebbd149c4fa'
-            'ae9d25829784342dbc2db023dc867e12647acb08110b2c25d919c0a4b4e16b8d')
+            'ae9d25829784342dbc2db023dc867e12647acb08110b2c25d919c0a4b4e16b8d'
+            '2c1ccf551e29d2925ab6cbea3d7a361e6f6218a12bf1e99e870ad605962a8105')
 depends=(
-  'nm-dispatcher-resolv.conf'
+  'nm-dispatcher-resolv.conf' 'openresolv'
 )
 
 package(){
   install -Dm644 50-mouse-acceleration.conf "$pkgdir"/etc/X11/xorg.conf.d/50-mouse-acceleration.conf
   install -Dm644 40-ipv6.conf "$pkgdir"/etc/sysctl.d/40-ipv6.conf
+  install -Dm644 rc-manager.conf "$pkgdir"/etc/NetworkManager/conf.d/rc-manager.conf
 }
 install=$pkgname.install
