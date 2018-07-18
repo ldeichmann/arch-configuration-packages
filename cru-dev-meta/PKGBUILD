@@ -1,8 +1,8 @@
-_ver=2.0
+_ver=3.0.0
 _pkgbase=cru-dev-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=2
+pkgrel=1
 pkgdesc="Meta package for cru dev"
 arch=(any)
 url="https://www.broken-by-design.org"
@@ -14,9 +14,6 @@ depends=(
 'gcc-multilib'
 'git'
 'java-runtime'
+'pycharm'
 'visual-studio-code-bin'
 )
-
-package(){
-    /bin/true
-}
