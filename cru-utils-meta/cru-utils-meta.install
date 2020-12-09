@@ -1,7 +1,0 @@
-post_install() {
-    echo "Enabling ssh service"
-    systemctl enable sshd.service
-    echo "Don't forget: You should configure and enable cpupower"
-    echo "Don't forget: You may have to enable tlp"
-    echo "Don't forget: You may have to enable bumblebee"
-}

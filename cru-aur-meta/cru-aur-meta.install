@@ -1,0 +1,14 @@
+post_install() {
+  echo "Updating dconf"
+  dconf update
+}
+
+post_upgrade() {
+  echo "Updating dconf"
+  dconf update
+}
+
+post_remove() {
+  echo "Updating dconf"
+  dconf update
+}

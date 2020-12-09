@@ -1,4 +1,6 @@
 post_install() {
+  echo "Enabling ntp"
+  timedatectl set-ntp true
   echo "Enabling gdm"
   systemctl enable gdm.service
   echo "Enabling network manager"
@@ -7,6 +9,7 @@ post_install() {
   systemctl enable avahi-daemon.service
   echo "Updating dconf"
   dconf update
+  
 }
 
 post_upgrade() {

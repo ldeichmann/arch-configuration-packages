@@ -1,0 +1,28 @@
+_ver=1.0.0
+_pkgbase=cru-aur-meta
+pkgname="${_pkgbase}"
+pkgver=${_ver}
+pkgrel=2
+pkgdesc="Meta package for cru aur and custom packages"
+conflicts=('cru-desktop-meta' 'cru-desktop-extra-meta')
+replaces=('cru-desktop-meta' 'cru-desktop-extra-meta')
+arch=(any)
+url="https://www.broken-by-design.org"
+license=('MIT')
+source=(
+    01-dash-to-dock
+)
+sha256sums=(
+    '5b380d75dd85c0146ffd5018c9df17175778ecace35c3956dedbbbb929fb29fd'
+)
+depends=(
+    'gnome-shell-extension-dash-to-dock'
+    'ttf-google-fonts-git'
+    'gnome-defaults-list'
+    'nm-dispatcher-resolv.conf'
+)
+
+package(){
+    install -Dm644 01-dash-to-dock "$pkgdir"/etc/dconf/db/local.d/01-dash-to-dock
+}
+install=$pkgname.install

@@ -2,8 +2,7 @@
 
 #themes
 cursor-theme='Human'
-gtk-theme='Arc-Darker'
-icon-theme='Moka'
+gtk-theme='Adwaita-dark'
 
 #panel
 clock-show-date=true

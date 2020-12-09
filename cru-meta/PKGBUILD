@@ -1,0 +1,183 @@
+_ver=1.0.0
+_pkgbase=cru-meta
+pkgname="${_pkgbase}"
+pkgver=${_ver}
+pkgrel=1
+pkgdesc="Meta package for cru"
+arch=(any)
+conflicts=('cru-config' 'cru-desktop-meta' 'cru-dev-meta' 'cru-system-meta')
+replaces=('cru-config' 'cru-desktop-meta' 'cru-dev-meta' 'cru-system-meta')
+url="https://www.broken-by-design.org"
+license=('MIT')
+source=(
+    01-calendar
+    01-extensions
+    01-input-sources
+    01-mouse-acceleration
+    01-nautilus
+    01-night-light
+    01-privacy
+    01-search-provider
+    01-themes
+    01-wm-keybindings
+    01-wm-preferences
+    01-xsettings
+    user
+    rc-manager.conf
+)
+sha256sums=(
+    '15c5cb5dd1696d8a7e930609ed5651d6b76841254c7b3e2354be28e87753edaf'
+    'f98744137d877c5fb5eaabd87fab6e029b28e284de46e683df7253c6a6b96bd5'
+    '60edaac4f1a85259ac3071aee49099b1b17c827a64941f70313acd00618bc3cf'
+    'e966208fbc77f1ed6544231f06c08d810c8ff2be92b623792f8e0b7a1634bc09'
+    '1d327deb216c079e362818fa263012e08e9dd4b5d1a4c0e937a382772fc0000d'
+    'bd30c647364809d2977cbbc2cb4085ddf4c52e106eb1152f1b94cc3cc6d0fd58'
+    'c380af16416ced2fb9339f4bbbada54e7f8d1f1c56155787956aa49180330e27'
+    'b83f7e97e0018d875b57f573e3ff94af39a5ff23f1cbdeb5cb2eebbb5ff2e93a'
+    '08d63b51fc426fc02f8819d5367fb252a7260081b03a7322b50331a1e8597881'
+    '5311de7f7d38520926e46cd7ea49a487e67b29de1b4063bb919f4dcfe0afda82'
+    'a520fe30da6876bafb90ec3e54c3aa2663b174cf1035a8ab29c5e6b17cbd55cf'
+    '59ca175e2ce1248fb995909ffec9b5d2c1a0583fd4cb74e9b3ce23919bca5123'
+    '1c80d348f95ec5feba7b622efe2391e9938eee7da0811d900906127cdcdeab18'
+    '2c1ccf551e29d2925ab6cbea3d7a361e6f6218a12bf1e99e870ad605962a8105'
+)
+depends=(
+    'acpi'
+    'alacritty'
+    'code'
+    'firefox'
+    'java-runtime'
+    'git'
+    'gparted'
+    'gst-libav'
+    'gst-plugins-bad'
+    'gst-plugins-base'
+    'gst-plugins-good'
+    'gst-plugins-ugly'
+    'keepassxc'
+    'mpv'
+    'networkmanager-openvpn'
+    'pavucontrol'
+    'syncthing'
+    'system-config-printer'
+    'ttf-hack'
+    'ttf-symbola'
+    'wireless_tools'
+    'xcb-util-cursor'
+    'xcursor-human'
+    'xorg-xbacklight'
+    'xorg-setxkbmap'
+
+    # printing
+    'cups'
+    'hplip'
+    'system-config-printer'
+
+    # system
+    'amd-ucode'
+    'android-udev'
+    'alsa-utils'
+    'btrfs-progs'
+    'dosfstools'
+    'flatpak'
+    'grml-zsh-config'
+    'htop'
+    'intel-ucode'
+    'linux-firmware'
+    'lm_sensors'
+    'neovim'
+    'nmap'
+    'ntfs-3g'
+    'openssh'
+    'p7zip'
+    'reflector'
+    'rsync'
+    'sudo'
+    'traceroute'
+    'wget'
+    'xfsprogs'
+    'zsh'
+    'zsh-completions'
+
+    # video acceleration
+    'intel-media-driver'
+    'libva-intel-driver'
+    'libva-mesa-driver'
+    'libva-utils'
+    'mesa-vdpau'
+    'vdpauinfo'
+
+    # gnome
+    'adwaita-icon-theme'
+    'baobab'
+    'dconf-editor'
+    'eog'
+    'eog-plugins'
+    'evince'
+    'evolution'
+    'evolution-ews'
+    'file-roller'
+    'gdm'
+    'gnome-backgrounds'
+    'gnome-bluetooth'
+    'gnome-calculator'
+    'gnome-contacts'
+    'gnome-control-center'
+    'gnome-dictionary'
+    'gnome-disk-utility'
+    'gnome-font-viewer'
+    'gnome-keyring'
+    'gnome-power-manager'
+    'gnome-screenshot'
+    'gnome-session'
+    'gnome-settings-daemon'
+    'gnome-shell'
+    'gnome-shell-extensions'
+    'gnome-system-monitor'
+    'gnome-terminal'
+    'gnome-themes-standard'
+    'gnome-tweak-tool'
+    'gnome-user-docs'
+    'gnome-user-share'
+    'grilo-plugins'
+    'gtk3-print-backends'
+    'gucharmap'
+    'gvfs'
+    'gvfs-afc'
+    'gvfs-goa'
+    'gvfs-google'
+    'gvfs-gphoto2'
+    'gvfs-mtp'
+    'gvfs-nfs'
+    'gvfs-smb'
+    'mousetweaks'
+    'mutter'
+    'nautilus'
+    'networkmanager'
+    'polkit-gnome'
+    'seahorse'
+    'sushi'
+    'tracker'
+    'vino'
+    'xdg-user-dirs-gtk'
+    'yelp'
+)
+
+package(){
+    install -Dm644 user "$pkgdir"/etc/dconf/profile/user
+    install -Dm644 01-calendar "$pkgdir"/etc/dconf/db/local.d/01-calendar
+    install -Dm644 01-extensions "$pkgdir"/etc/dconf/db/local.d/01-extensions
+    install -Dm644 01-input-sources "$pkgdir"/etc/dconf/db/local.d/01-input-sources
+    install -Dm644 01-mouse-acceleration "$pkgdir"/etc/dconf/db/local.d/01-mouse-acceleration
+    install -Dm644 01-nautilus "$pkgdir"/etc/dconf/db/local.d/01-nautilus
+    install -Dm644 01-night-light "$pkgdir"/etc/dconf/db/local.d/01-night-light
+    install -Dm644 01-privacy "$pkgdir"/etc/dconf/db/local.d/01-privacy
+    install -Dm644 01-search-provider "$pkgdir"/etc/dconf/db/local.d/01-search-provider
+    install -Dm644 01-themes "$pkgdir"/etc/dconf/db/local.d/01-themes
+    install -Dm644 01-wm-keybindings "$pkgdir"/etc/dconf/db/local.d/01-wm-keybindings
+    install -Dm644 01-wm-preferences "$pkgdir"/etc/dconf/db/local.d/01-wm-preferences
+    install -Dm644 01-xsettings "$pkgdir"/etc/dconf/db/local.d/01-xsettings
+
+    install -Dm644 rc-manager.conf "$pkgdir"/etc/NetworkManager/conf.d/rc-manager.conf
+}
+install=$pkgname.install

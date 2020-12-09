@@ -1,0 +1,4 @@
+[org/gnome/desktop/input-sources]
+
+sources=[('xkb', 'us+altgr-intl'), ('xkb', 'us+altgr-intl')]
+xkb-options=['lv3:ralt_switch']
