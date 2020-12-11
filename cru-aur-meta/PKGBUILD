@@ -2,7 +2,7 @@ _ver=1.0.0
 _pkgbase=cru-aur-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=2
+pkgrel=3
 pkgdesc="Meta package for cru aur and custom packages"
 conflicts=('cru-desktop-meta' 'cru-desktop-extra-meta')
 replaces=('cru-desktop-meta' 'cru-desktop-extra-meta')
@@ -17,9 +17,11 @@ sha256sums=(
 )
 depends=(
     'gnome-shell-extension-dash-to-dock'
-    'ttf-google-fonts-git'
     'gnome-defaults-list'
     'nm-dispatcher-resolv.conf'
+    'ttf-google-fonts-git'
+    'ttf-symbola'
+    'xcursor-human'
 )
 
 package(){

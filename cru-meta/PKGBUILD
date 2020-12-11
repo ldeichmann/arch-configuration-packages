@@ -2,7 +2,7 @@ _ver=1.0.0
 _pkgbase=cru-meta
 pkgname="${_pkgbase}"
 pkgver=${_ver}
-pkgrel=1
+pkgrel=2
 pkgdesc="Meta package for cru"
 arch=(any)
 conflicts=('cru-config' 'cru-desktop-meta' 'cru-dev-meta' 'cru-system-meta')
@@ -61,10 +61,8 @@ depends=(
     'syncthing'
     'system-config-printer'
     'ttf-hack'
-    'ttf-symbola'
     'wireless_tools'
     'xcb-util-cursor'
-    'xcursor-human'
     'xorg-xbacklight'
     'xorg-setxkbmap'
 
@@ -84,6 +82,7 @@ depends=(
     'htop'
     'intel-ucode'
     'linux-firmware'
+    'linux-headers'
     'lm_sensors'
     'neovim'
     'nmap'
@@ -98,6 +97,7 @@ depends=(
     'xfsprogs'
     'zsh'
     'zsh-completions'
+    'zsh-history-substring-search'
 
     # video acceleration
     'intel-media-driver'
